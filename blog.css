@@ -1,0 +1,88 @@
+/* styles.css */
+
+body {
+  background-image: url("./img/photo-1542435503-956c469947f6.avif");
+  background-color: darkslategray;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  padding: 20px;
+  height: 200vh;
+  
+}
+header {
+  background-color: wheat;
+  margin:-14px;
+  padding: -6px;
+
+}
+
+nav, li {
+  list-style-type: none;
+  padding: 2px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+nav , li , a {
+  color: orangered;
+  font-size: large;
+  font-family: sans-serif;
+  
+}
+h1 {
+  text-align: center;
+}
+
+#posts-container {
+  margin-bottom: 20px;
+}
+
+.post {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.post h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.post p {
+  margin: 10px 0;
+}
+
+button {
+  margin-top: 10px;
+}
+
+#submit-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#cancel-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+#title-input,
+#content-input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#title-input {
+  font-size: 18px;
+}
+
+#content-input {
+  height: 150px;
+  resize: none;
+  font-size: 16px;
+}
