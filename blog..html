@@ -3,6 +3,7 @@
 <head>
   <title>My Blogging Website</title>
   <link rel="stylesheet" type="text/css" href="blog.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body >
   
@@ -27,6 +28,31 @@
       <span id="like-count">0</span>
     </div>
   </div>
+  <!-- Custom floating button section -->
+  <div class="action" onclick="actionToggle();">
+    <span>+</span>
+    <div id="customization-options">
+    <label for="background-select">Custom background</label>
+    <select name="" id="background-select">
+        <option value="default">default</option>
+        <option value="image1">Algae Bloom<img src="" alt="" srcset=""></option>
+        <option value="image2">Block design</option>
+        <option value="image3">pink circle</option>
+    </select>
+        <label>Background Color:</label>
+        <input type="color" id="bg-color-picker"><br>
+        <label>Text Color:</label>
+        <input type="color" id="text-color-picker"><br>
+        <label>Font Size:</label>
+        <input type="range" id="font-size-slider" min="10" max="50" step="1"><br>
+        <label>Font Family:</label>
+        <select id="font-family-selector">
+            <option value="Arial">Arial</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Georgia">Georgia</option>
+        </select>
+    </div>
+</div>
 
   <form id="post-form">
     <input type="text" id="title-input" placeholder="Title" required>
@@ -37,5 +63,6 @@
   </form>
 
   <script src="blog.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
