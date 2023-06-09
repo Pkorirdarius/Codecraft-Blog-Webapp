@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Blogging Website</title>
+  <link rel="stylesheet" type="text/css" href="blog.css">
+</head>
+<body >
+  
+  <div>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="">LOGIN PAGE</a></li>
+      </ul>
+    </nav>
+    <hr>
+  <h1>My Blog</h1>
+  </header>
+  <br * 3>
+</div>
+  <div id="posts-container">
+    <!-- Display blog posts here -->
+    <div class="post">
+      <!-- existing code -->
+      <button class="like-btn">"👍"</button>
+      <span id="like-count">0</span>
+    </div>
+  </div>
+
+  <form id="post-form">
+    <input type="text" id="title-input" placeholder="Title" required>
+    <textarea id="content-input" placeholder="Content" required></textarea>
+    <button id="submit-btn">Submit</button>
+    <button id="cancel-btn">Cancel</button>
+    
+  </form>
+
+  <script src="blog.js"></script>
+</body>
+</html>
