@@ -2,42 +2,379 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customizable page</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CodeCraft Blog</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="./css/all.css">
+    <!--  Owl-Carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <!-- AOS Library  -->
+    <link rel="stylesheet" href="./css/aos.css">
+    <!-- Custom Style   -->
+    <link rel="stylesheet" href="./css/Style.css">
 </head>
 <body>
-<div class="action" onclick="actionToggle();">
-    <span>+</span>
-    <div id="customization-options">
-    <label for="background-select">Custom background</label>
-    <select name="" id="background-select">
-        <option value="default">default</option>
-        <option value="image1">Algae Bloom<img src="" alt="" srcset=""></option>
-        <option value="image2">Block design</option>
-        <option value="image3">pink circle</option>
-    </select>
-        <label>Background Color:</label>
-        <input ty   pe="color" id="bg-color-picker"><br>
-        <label>Text Color:</label>
-        <input type="color" id="text-color-picker"><br>
-        <label>Font Size:</label>
-        <input type="range" id="font-size-slider" min="10" max="50" step="1"><br>
-        <label>Font Family:</label>
-        <select id="font-family-selector">
-            <option value="Arial">Arial</option>
-            <option value="Verdana">Verdana</option>
-            <option value="Georgia">Georgia</option>
-        </select>
-    </div>
-</div>
+    <!--Navigation bar-->
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#" class="text-gray">CodeCraftBlog</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#top articles">Top articles</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Login</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#top articles">Recommended Articles</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Site Section -->
+    <main>
+        <!-- Site Title-->
+        <section class="site-title" id="home">
+            <div class="site-background" data-aos="fade-up" data-aos-delay="100">
+                <h3>Techonlogy & Science</h3>
+                <h1>Revolutionary discoveries made in this era</h1>
+                <button class="btn">Journey with us</button>
+            </div>
+        </section>
+        <!--  Blog Carousel -->
+        <section>
+            <div class="blog">
+                <div class="container">
+                    <div class="owl-carousel owl-theme blog-post">
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="./assets/Blog-post/adi-goldstein-EUsVwEOsblE-unsplash.jpg" alt="post-1">
+                            <div class="blog-title">
+                                <h3>Artificial Inteligence Is changeing the world forever</h3>
+                                <button class="btn btn-blog">Artifiicial Intelligence</button>
+                                <span>By,Jane Harrlow,New Yorker</span>
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
+                            <img src="./assets/Blog-post/fabio-oyXis2kALVg-unsplash.jpg" alt="post-1">
+                            <div class="blog-title">
+                                <h3>Block chain technology is the trending tech job.</h3>
+                                <button class="btn btn-blog">Technology</button>
+                                <span>By,Darius Korir,New Yorker</span>
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-left" data-aos-delay="200">
+                            <img src="./assets/Blog-post/luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="post-1">
+                            <div class="blog-title">
+                                <h3>Is Artificial Intelligence going to take over web designing jobs?</h3>
+                                <button class="btn btn-blog">Technology</button>
+                                <span>By,Ammy Doe,Ohio</span>
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="./assets/Blog-post/nasa-Q1p7bh3SHj8-unsplash.jpg" alt="post-1">
+                            <div class="blog-title">
+                                <h3>Nasa,launches probe to mars,to confirm vibranium on Mars.</h3>
+                                <button class="btn btn-blog">Science</button>
+                                <span>By,Alvin muhiro,Nairobian</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-navigation">
+                        <span class="owl-nav-prev"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="owl-nav-next"><i class="fas fa-long-arrow-alt-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  Site Content -->
+        <section class="container" id="top articles">
+            <div class="site-content">
+                <div class="posts">
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/Blog-post/annie-spratt-ogDort6vKuE-unsplash.jpg" class="img" alt="blog1">
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;June 9, 2023</span>
+                                <span>32 Comments</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="https://www.sciencedaily.com/releases/2023/06/230602115040.htm">Mysterious dashes revealed in Milky Way's center.</a>
+                            <p>"It was a surprise to suddenly find a new population of structures that seem to be pointing
+                                in the direction of the black hole," Yusef-Zadeh said. "I was actually stunned when I saw these.
+                                We had to do a lot of work to establish that we weren't fooling ourselves. And we found that these
+                                filaments are not random but appear to be tied to the outflow of our black hole. By studying them,
+                                 we could learn more about the black hole's spin and accretion disk orientation."
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/Blog-post/christian-wiediger-c3ZWXOv1Ndc-unsplash.jpg" class="img" alt="blog1">
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Co-Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;June 9, 2023</span>
+                                <span>17 Comments</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="https://www.sciencedaily.com/releases/2023/06/230601155957.htm">The 'breath' between atoms -- a new building block for quantum technology</a>
+                            <p>University of Washington researchers have discovered they can detect atomic "breathing," 
+                                or the mechanical vibration between two layers of atoms, by observing the type of light 
+                                those atoms emitted when stimulated by a laser. The sound of this atomic "breath" could 
+                                help researchers encode and transmit quantum information.
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/Blog-post/hulki-okan-tabak-T9HLn-g6Cmo-unsplash.jpg" class="img" alt="blog1">
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Co-Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;June 9, 2023</span>
+                                <span>5 Comments</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="https://www.sciencedaily.com/releases/2023/06/230608195656.htm">Lingering effects of Neanderthal DNA found in modern humans</a>
+                            <p>Recent scientific discoveries have shown that Neanderthal genes comprise some
+                                1 to 4% of the genome of present-day humans whose ancestors migrated out of Africa,
+                                but the question remained open on how much those genes are still actively influencing human traits -- until now.
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/Blog-post/daniele-levis-pelusi-tL_IIeMc5Xo-unsplash.jpg" class="img" alt="blog1">
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Co-Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;June 9, 2023</span>
+                                <span>12 Commets</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="https://www.sciencedaily.com/releases/2023/06/230608195633.htm">Breakthrough: Scientists develop artificial molecules that behave like real ones</a>
+                            <p>Scientists from the Radboud University have developed synthetic molecules that resemble real organic molecules.
+                                 A collaboration of researchers, led by Alex Khajetoorians and Daniel Wegner, can now simulate the behaviour
+                                 of real molecules by using artificial molecules. In this way, they can tweak properties of molecules in ways
+                                 that are normally difficult or unrealistic, and they can understand much better how molecules change.
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="pagination flex-row">
+                        <a href="#"><i class="fas fa-chevron-left"></i></a>
+                        <a href="#home" class="pages">1</a>
+                        <a href="#top articles" class="pages">2</a>
+                        <a href="#" class="pages">3</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <aside class="sidebar">
+                    <div class="category">
+                        <h2>Category</h2>
+                        <ul class="category-list">
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="100">
+                                <a href="https://www.sciencedaily.com/search/?keyword=software#gsc.tab=0&gsc.q=software&gsc.page=1">Software</a>
+                                <span>(05)</span>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="200">
+                                <a href="https://www.sciencedaily.com/releases/2023/06/230602115040.htm">Techonlogy</a>
+                                <span>(02)</span>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="300">
+                                <a href="https://www.sciencedaily.com/search/?keyword=software#gsc.tab=0&gsc.q=lifestyle&gsc.sort=">Lifestyle</a>
+                                <span>(07)</span>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="400">
+                                <a href="https://www.sciencedaily.com/search/?keyword=software#gsc.tab=0&gsc.q=shopping&gsc.sort=">Shopping</a>
+                                <span>(01)</span>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="500">
+                                <a href="https://www.sciencedaily.com/search/?keyword=software#gsc.tab=0&gsc.q=food&gsc.sort=">Food</a>
+                                <span>(08)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popular-post">
+                        <h2>Recommended Post</h2>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/popular-post/m-blog-1.jpg" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;June 9,
+                                        2023</span>
+                                    <span>23 Comments</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4055352/">Tea a unique but common beverage?</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="300">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/popular-post/m-blog-2.jpg" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;June  6,
+                                        2023</span>
+                                    <span>112 Comments</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="https://forestecosyst.springeropen.com/articles">Save trees for a better tommorow ,stop global warming.</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/popular-post/m-blog-3.jpg" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;June 6,
+                                        2023</span>
+                                    <span>24 Comments</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="https://www.desiringgod.org/topics/marriage/articles">Will my marriage ever be more?</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="500">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/popular-post/jacek-dylag-jo8C9bt3uo8-unsplash.jpg" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;June 6,
+                                        2023</span>
+                                    <span>62 Comments</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="https://hbr.org/2011/12/the-future-of-shopping">Shopping online is revolutinaising shopping as we know it.</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="600">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/popular-post/victoria-shes-UC0HZdUitWY-unsplash.jpg" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;June 9,
+                                        2019</span>
+                                    <span>52 Comments</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="https://recipes.timesofindia.com/articlelist.cms">How did GMO'S change the course of our meals.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsletter" data-aos="fade-up" data-aos-delay="300">
+                        <h2>Newsletter</h2>
+                        <div class="form-element">
+                            <input type="text" class="input-element" placeholder="Email">
+                            <button class="btn form-btn">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="popular-tags">
+                        <h2>Popular Tags</h2>
+                        <div class="tags flex-row">
+                            <span class="tag" data-aos="flip-up" data-aos-delay="100">Software</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="200">technology</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="300">travel</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="400">illustration</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="500">design</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="600">lifestyle</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="700">love</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="800">project</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
 
-<div class="search-container">
-<input type="text" id="searchInput" class="search-input" placeholder="Enter search term">
-<button id="searchButton" class="search-button">Search</button>
-</div>
-<script src="app.js"></script>
-<script src="search.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                <h2>About us</h2>
+                <p>CodeCraft is a blogger organisation that specialises in publishing articles and providing readers with the necessary
+                    content they desire.
+                </p>
+            </div>
+            <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+                <h2>Newsletter</h2>
+                <p>Stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+            <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+                <h2>Instagram</h2>
+                <div class="flex-row">
+                    <img src="./assets/instagram/thumb-card3.png" alt="insta1">
+                    <img src="./assets/instagram/thumb-card4.png" alt="insta2">
+                    <img src="./assets/instagram/thumb-card5.png" alt="insta3">
+                </div>
+            </div>
+            <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                <h2>Follow us</h2>
+                <p>Let us be Social</p>
+                <div>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
+    <!-- Jquery Library file -->
+    <script src="./js/Jquery3.4.1.min.js"></script>
+    <!-- Owl-Carousel js -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <!-- AOS js Library  -->
+    <script src="./js/aos.js"></script>
+    <!-- Custom Javascript file -->
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
+
