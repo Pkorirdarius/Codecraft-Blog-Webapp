@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +15,6 @@
     <link rel="stylesheet" href="./css/aos.css">
     <!-- Custom Style   -->
     <link rel="stylesheet" href="./css/Style.css">
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!--Navigation bar-->
@@ -40,11 +40,7 @@
                         <a href="#">Login</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Personal blog</a>
-                    </li>
-                    <li class="nav-link search-container">
-                        <input type="text" id="searchInput" placeholder="Enter search Item?">
-                        <button id="searchButton" class="search-button">search</button>
+                        <a href="#top articles">Recommended Articles</a>
                     </li>
                 </ul>
             </div>
@@ -52,31 +48,6 @@
     </nav>
     <!-- Main Site Section -->
     <main>
-        <!-- Custom floating editing btn -->
-        <div class="action" onclick="actionToggle();">
-            <span>+</span>
-            <div id="customization-options">
-            <label for="background-select">Custom background</label>
-            <select name="" id="background-select">
-                <option value="default">default</option>
-                <option value="image1">Algae Bloom<img src="" alt="" srcset=""></option>
-                <option value="image2">Block design</option>
-                <option value="image3">pink circle</option>
-            </select>
-                <label>Background Color:</label>
-                <input type="color" id="bg-color-picker"><br>
-                <label>Text Color:</label>
-                <input type="color" id="text-color-picker"><br>
-                <label>Font Size:</label>
-                <input type="range" id="font-size-slider" min="10" max="50" step="1"><br>
-                <label>Font Family:</label>
-                <select id="font-family-selector">
-                    <option value="Arial">Arial</option>
-                    <option value="Verdana">Verdana</option>
-                    <option value="Georgia">Georgia</option>
-                </select>
-            </div>
-        </div>
         <!-- Site Title-->
         <section class="site-title" id="home">
             <div class="site-background" data-aos="fade-up" data-aos-delay="100">
@@ -404,9 +375,6 @@
     <script src="./js/aos.js"></script>
     <!-- Custom Javascript file -->
     <script src="./js/main.js"></script>
-    <script src="search.js"></script>
-    <script src="app.js"></script>
 </body>
 
 </html>
-
