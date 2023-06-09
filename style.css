@@ -4,7 +4,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
-    background: linear-gradient(#7d6cfc,#c635ea); /* default background image */
+    background: white; /* default background image */
     background-size: cover;
     color: black;
     font-size: 16px;
@@ -89,7 +89,7 @@ body {
   }
 
   .search-input {
-    padding: 10px;
+    padding: 0 2rem;
     border: 2px solid #ddd;
     border-radius: 5px 0 0 5px;
     font-size: 16px;
@@ -97,7 +97,7 @@ body {
   }
 
   .search-button {
-    padding: 10px 20px;
+    padding: 0 2rem;
     background-color: #4caf50;
     border: none;
     border-radius: 0 5px 5px 0;
